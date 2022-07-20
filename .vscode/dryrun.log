@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/user_me/Allocator'
+make: Leaving directory '/home/user_me/Allocator'
+ 
+Makefile:66: *** insufficient number of arguments (2) to function 'patsubst'.  Stop.
+
