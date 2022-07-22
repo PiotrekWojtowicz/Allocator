@@ -1,8 +1,13 @@
 #ifndef MY_MM_ALLOC
 #define MY_MM_ALLOC
+/*Headers */
 #include "libmem.h"
 #include <unistd.h>
 #include <sys/resource.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
 /*Define gobal static char pointer
 This ensures us that the range of the
 variable will not exceed the current file*/
@@ -10,13 +15,9 @@ variable will not exceed the current file*/
 #define PRIVATE_CHAR_ static char *
 #endif
 
-/*Private global variables*/
-/*Pointer the begining of our memory heap*/
-PRIVATE_CHAR_ Memory_heap;
-/*Memory break pointer */
-PRIVATE_CHAR_ Memory_brk;
-/*Max legal heap address*/
-PRIVATE_CHAR_ Memory_max_addr;
+#ifndef MAX_HEAP
+#define MAX_HEAP (20*(1<<20))  /* 20 MB */
+#endif
 
 /*
 Why do we even need this interface?
@@ -26,6 +27,8 @@ malloc.
 */
 /*Malloc wraper*/
 void* Malloc(size_t size);
+void* Realloc(void *ptr, size_t size);
+void* Calloc(size_t nmemb, size_t size);
 /*Initialize the memory system*/
 void Memory_ini(void);
 /*Basic implementation of Sbrk, extending the heap*/
