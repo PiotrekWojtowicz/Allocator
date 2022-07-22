@@ -10,6 +10,7 @@
 
 #ifndef MY_ALLOC_MACROS_
 #define MY_ALLOC_MACROS_
+
 //Macros section
 #define WSIZE 4 //Word and header/footer size in bytes
 #define DSIZE 8 //Dword size double that and we have aliigment
@@ -47,7 +48,7 @@
 
 #endif
 
-PRIVATE_CHAR_ heap_listp = 0;  /* Pointer to first block */  
+PRIVATE_CHAR_ heap_listp = NULL;  /* Pointer to first block */  
 
 //Malloc interface for the user
 //only these modules shall be
@@ -62,5 +63,8 @@ extern void Alloc_free(void *ptr);
 extern void* Mem_realloc(void *ptr, size_t size);
 extern void* Mem_calloc(size_t nmemb, size_t size);
 extern void* Mem_checkheap(int);
+
+//Methods that appears to be helpful
+static void *Extend_heap(size_t words);
 
 #endif

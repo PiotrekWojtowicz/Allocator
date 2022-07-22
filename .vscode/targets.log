@@ -8,7 +8,7 @@ Makefile:66: *** insufficient number of arguments (2) to function 'patsubst'.  S
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 22 11:41:42 2022
+# Make data base, printed on Fri Jul 22 19:02:46 2022
 
 # Variables
 
@@ -21,9 +21,9 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 22)
 AR = ar
 # environment
-I3SOCK = /run/user/1000/i3/ipc-socket.605
+I3SOCK = /run/user/1000/i3/ipc-socket.568
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-2631bf1d-5c12-4f8e-8146-1d4b8c2a2edf.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-36b29e16-608b-4a0b-b1b0-46cd9004ef2a.sock
 # environment
 VSCODE_CWD = /home/user_me
 # environment
@@ -85,7 +85,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4972
+VSCODE_PID = 6078
 # environment
 XDG_SESSION_TYPE = tty
 # automatic
@@ -133,7 +133,7 @@ MOTD_SHOWN = pam
 # makefile (from 'Makefile', line 30)
 AFLAGS = rc
 # environment
-INVOCATION_ID = f2620ea370684e559106751f92fbd8a8
+INVOCATION_ID = 07f3778222b443079cd0e455f2fc25b6
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -155,7 +155,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 461
+SYSTEMD_EXEC_PID = 444
 # environment
 DISPLAY = :0
 # environment
@@ -211,10 +211,10 @@ CC = gcc
 
 # Directories
 
-# /home/user_me/Allocator (device 2084, inode 4465228): 12 files, no impossibilities.
-# . (device 2084, inode 4465228): 12 files, no impossibilities.
+# /home/user_me/Allocator (device 2084, inode 4465228): 11 files, no impossibilities.
+# . (device 2084, inode 4465228): 11 files, no impossibilities.
 
-# 24 files, no impossibilities in 2 directories.
+# 22 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -263,12 +263,12 @@ all:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 225 B / avg = 10 B
-# current buf: size = 8162 B / used = 225 B / count = 22 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 218 B / avg = 10 B
+# current buf: size = 8162 B / used = 218 B / count = 21 / avg = 10 B
 
-# strcache performance: lookups = 28 / hit rate = 21%
+# strcache performance: lookups = 27 / hit rate = 22%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/28=0%
-# Finished Make data base on Fri Jul 22 11:41:42 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/27=0%
+# Finished Make data base on Fri Jul 22 19:02:46 2022
 
  

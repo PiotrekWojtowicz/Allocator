@@ -2,11 +2,11 @@
 
 /*Private global variables*/
 /*Pointer the begining of our memory heap*/
-PRIVATE_CHAR_ Memory_heap;
+PRIVATE_CHAR_ Memory_heap = NULL;
 /*Memory break pointer */
-PRIVATE_CHAR_ Memory_brk;
+PRIVATE_CHAR_ Memory_brk = NULL;
 /*Max legal heap address*/
-PRIVATE_CHAR_ Memory_max_addr;
+PRIVATE_CHAR_ Memory_max_addr= NULL;
 
 void *Malloc(size_t size){
     //store the output
@@ -45,12 +45,12 @@ void Memory_inti(void){
     Memory_max_addr = (char*)(Memory_heap + MAX_HEAP);
 }
 
-void *sbrk(int incr){
+void *Memory_sbrk(int incr){
     //Store the old_brk pointer
     char *old_brk = Memory_brk;
     
     if((incr < 0) || ((Memory_brk + incr)>Memory_max_addr)){
-        errno = ENOMEM; //cant shrunk and exceed memory
+        errno = ENOMEM; //cant shrunk or exceed memory
         perror("Error: Run out of memory");
         exit(EXIT_FAILURE); // no error handling in here
     } 
