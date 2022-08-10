@@ -63,6 +63,9 @@ extern void Alloc_free(void *ptr);
 extern void* Mem_realloc(void *ptr, size_t size);
 extern void* Mem_calloc(size_t nmemb, size_t size);
 extern void* Mem_checkheap(int);
+static void* Mem_coalesce(void *ptr);
+static void* Find_fit(size_t size);
+static void Place(void *bp, size_t size);
 
 //Methods that appears to be helpful
 static void *Extend_heap(size_t words);

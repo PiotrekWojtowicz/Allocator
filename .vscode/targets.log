@@ -8,7 +8,7 @@ Makefile:66: *** insufficient number of arguments (2) to function 'patsubst'.  S
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 22 19:02:46 2022
+# Make data base, printed on Wed Aug 10 11:25:25 2022
 
 # Variables
 
@@ -21,11 +21,15 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 22)
 AR = ar
 # environment
-I3SOCK = /run/user/1000/i3/ipc-socket.568
+OSH = /home/user_me/.oh-my-bash
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-36b29e16-608b-4a0b-b1b0-46cd9004ef2a.sock
+I3SOCK = /run/user/1000/i3/ipc-socket.632
 # environment
-VSCODE_CWD = /home/user_me
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-57f09773-2760-4105-919f-955eecc2f3c5.sock
+# environment
+VSCODE_CWD = /home/user_me/Allocator
+# environment
+WINDOWID = 10485771
 # environment
 WINDOWPATH = 1
 # makefile (from 'Makefile', line 37)
@@ -43,7 +47,11 @@ PWD = /home/user_me/Allocator
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
+LSCOLORS = Gxfxcxdxdxegedabagacad
+# environment
 MAIL = /var/spool/mail/user_me
+# environment
+OLDPWD = /home/user_me
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # makefile (from 'Makefile', line 65)
@@ -76,6 +84,8 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
+# environment
+HISTSIZE = 
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from 'Makefile', line 1)
@@ -85,7 +95,9 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6078
+VSCODE_PID = 3442
+# environment
+HISTIGNORE = &:[ ]*:exit:ls:bg:fg:history:clear
 # environment
 XDG_SESSION_TYPE = tty
 # automatic
@@ -106,6 +118,8 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 <D = $(patsubst %/,%,$(dir $<))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"pl","availableLanguages":{"*":"pl"},"_languagePackId":"993a25eb46a7e0a4aef446c1661beda3.pl","_translationsConfigFile":"/home/user_me/.config/Code/clp/993a25eb46a7e0a4aef446c1661beda3.pl/tcf.json","_cacheRoot":"/home/user_me/.config/Code/clp/993a25eb46a7e0a4aef446c1661beda3.pl","_resolvedLanguagePackCoreLocation":"/home/user_me/.config/Code/clp/993a25eb46a7e0a4aef446c1661beda3.pl/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/home/user_me/.config/Code/clp/993a25eb46a7e0a4aef446c1661beda3.pl/corrupted.info","_languagePackSupport":true}
+# environment
+HISTFILESIZE = 
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # makefile
@@ -115,7 +129,9 @@ MAKECMDGOALS := all
 # makefile (from 'Makefile', line 44)
 LIB_NAME = my_alloc
 # environment
-SHLVL = 3
+SHLVL = 4
+# environment
+TERMINFO = /usr/lib/kitty/terminfo
 # environment
 MAKELEVEL := 0
 # makefile (from 'Makefile', line 60)
@@ -123,7 +139,7 @@ SRC_C_FILES = $(foreach D, $(WHEREAMI), $(wildcard $(D)/$(ALLOCATOR)*.c))
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/user_me/Sys_Builds/clion/bin/clion.sh
+PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/user_me/.local/bin
 # default
 MAKEFILES := 
 # environment
@@ -133,15 +149,19 @@ MOTD_SHOWN = pam
 # makefile (from 'Makefile', line 30)
 AFLAGS = rc
 # environment
-INVOCATION_ID = 07f3778222b443079cd0e455f2fc25b6
+INVOCATION_ID = 3bd1dc5415854a6facfb24d97b8f915a
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
 ?F = $(notdir $?)
 # environment
 XDG_SEAT = seat0
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
 # automatic
 +F = $(notdir $+)
+# environment
+LESS = -R
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # makefile (from 'Makefile', line 55)
@@ -155,7 +175,9 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 444
+SYSTEMD_EXEC_PID = 463
+# environment
+KITTY_WINDOW_ID = 1
 # environment
 DISPLAY = :0
 # environment
@@ -165,9 +187,17 @@ MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 50)
 LIB_C_FILES = $(foreach D, $(ST_LIB_DIR), $(wildcard $(D)/lib*.c))
 # environment
+KITTY_PID = 711
+# environment
+PAGER = less
+# environment
 _ = /usr/bin/make
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
+# environment
+LC_CTYPE = pl_PL.UTF-8
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -179,7 +209,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-1829fa86-1.68.1-main.sock
 # environment
-TERM = linux
+TERM = xterm-kitty
 # environment
 XDG_SESSION_ID = 1
 # default
@@ -202,8 +232,10 @@ LIB_O_FILES = $(patsubst %.c, %.o $(LIB_C_FILES))
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # makefile (from 'Makefile', line 16)
 CC = gcc
+# environment
+KITTY_INSTALLATION_DIR = /usr/lib/kitty
 # variable set hash-table stats:
-# Load=95/1024=9%, Rehash=0, Collisions=3/116=3%
+# Load=111/1024=11%, Rehash=0, Collisions=4/132=3%
 
 # Pattern-specific Variable Values
 
@@ -211,10 +243,10 @@ CC = gcc
 
 # Directories
 
-# /home/user_me/Allocator (device 2084, inode 4465228): 11 files, no impossibilities.
-# . (device 2084, inode 4465228): 11 files, no impossibilities.
+# /home/user_me/Allocator (device 2084, inode 4465228): 12 files, no impossibilities.
+# . (device 2084, inode 4465228): 12 files, no impossibilities.
 
-# 22 files, no impossibilities in 2 directories.
+# 24 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -253,6 +285,7 @@ all:
 %.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 # files hash-table stats:
@@ -263,12 +296,12 @@ all:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 218 B / avg = 10 B
-# current buf: size = 8162 B / used = 218 B / count = 21 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 227 B / avg = 10 B
+# current buf: size = 8162 B / used = 227 B / count = 22 / avg = 10 B
 
-# strcache performance: lookups = 27 / hit rate = 22%
+# strcache performance: lookups = 28 / hit rate = 21%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=0/27=0%
-# Finished Make data base on Fri Jul 22 19:02:46 2022
+# Load=22/8192=0%, Rehash=0, Collisions=0/28=0%
+# Finished Make data base on Wed Aug 10 11:25:25 2022
 
  
